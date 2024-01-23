@@ -1,13 +1,12 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
 }
 
 body {
   width: 1100px;
   margin: 0 auto;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
 }
 
 h1,
@@ -27,8 +26,4 @@ blockquote {
 
 a {
   color: inherit;
-}
-
-img {
-  width: 100%;
 }
