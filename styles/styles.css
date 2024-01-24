@@ -11,7 +11,6 @@ a:active {
   text-decoration: none;
 }
 body {
-  height: 3028px;
   box-sizing: border-box;
 }
 .header {
@@ -24,17 +23,20 @@ body {
   padding: 44px 42px 42px 26.52px;
 }
 .header_nav_menu {
-  width: 391px;
   list-style: circle;
   display: flex;
+  gap: 32px;
   justify-content: space-between;
   .a_menu {
     color: black;
   }
-  .first_point {
-    list-style-type: none;
-    text-decoration: none;
-  }
+}
+address {
+  font-style: normal;
+}
+.first_point {
+  list-style-type: none;
+  text-decoration: none;
 }
 .logotip_black {
   width: 140px;
@@ -90,22 +92,21 @@ body {
 .subline_button {
   display: flex;
   flex-direction: row;
-  font-size: 22px;
 }
 .subline {
   margin: 140px 0px 62px 78px;
   word-spacing: 18.5px;
+  font-size: 22px;
 }
-.button {
+button {
   width: 256px;
   height: 51px;
   margin: 124px 0px 0px 80px;
-  border: 2px solid #ccc;
+  border: 1.5px solid #ccc;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+  background: none;
+  text-transform: uppercase;
+  font-size: 22px;
 }
 .lots {
   margin: 179px 24px 0px 24px;
@@ -117,70 +118,58 @@ body {
   margin-left: 40px;
 }
 .list_of_lots {
+  height: 563px;
   display: flex;
   list-style-type: none;
   margin-top: 27px;
   flex-wrap: wrap;
   gap: 25px;
+  flex-grow: 1;
 }
 .a_paragraph {
   text-decoration: none;
 }
 .cards_lots {
+  height: 100%;
   width: 334px;
   text-decoration: none;
   color: white;
+  font-size: 20px;
+}
+.article_cards {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h3 {
+  padding: 50px 20px 0px 40px;
+  text-decoration: 1px underline;
+  text-transform: uppercase;
+  text-underline-offset: 5px;
+  word-spacing: 10%;
+  line-height: 1.1;
+}
+.paragraph_cards {
+  padding: 0px 40px 50px 40px;
 }
 .first_lot {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
     url(../images/card-lot-01.jpg);
   background-position: center;
   background-size: 334px, 563px;
-  .first_lot_tittle {
-    text-decoration: 1px underline;
-    font-size: 22px;
-    text-transform: uppercase;
-    text-underline-offset: 5px;
-    margin: 53px 40px 0px 40px;
-  }
-  .first_lot_paragraph {
-    font-size: 20px;
-    margin: 238px 40px 48px 40px;
-  }
 }
 .second_lot {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
     url(../images/card-lot-02.jpg);
   background-position: center;
   background-size: 334px, 563px;
-  .second_lot_tittle {
-    text-decoration: 1px underline;
-    font-size: 22px;
-    text-transform: uppercase;
-    text-underline-offset: 5px;
-    margin: 51px 40px 0px 40px;
-  }
-  .second_lot_paragraph {
-    font-size: 20px;
-    margin: 0px 40px 48px 40px;
-  }
 }
 .third_lot {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
     url(../images/card-lot-03.jpg);
   background-position: center;
   background-size: 334px, 563px;
-  .third_lot_tittle {
-    margin: 51px 40px 0px 40px;
-    text-decoration: 1px underline;
-    text-underline-offset: 5px;
-    font-size: 22px;
-    text-transform: uppercase;
-  }
-  .third_lot_paragraph {
-    margin: 94px 40px 48px 40px;
-    font-size: 20px;
-  }
 }
 .more {
   margin: 30px 0px 0px 40px;
@@ -248,9 +237,6 @@ body {
   list-style-type: none;
   text-align: center;
   color: black;
-  .a_menu {
-    color: black;
-  }
 }
 .logo_socials {
   width: 48px;
